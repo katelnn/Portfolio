@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/project1.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Rufina'>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Average Sans'>
+
+    <!-- Hamburger Icon Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <title>Citations</title>
+    
+</head>
+
+<body>
+    <!------- HEADER ------->
+    <header>
+        <nav class="navbar">
+  
+        <a class="company-name" href="index.html">K.L.</a>
+  
+        <ul class="nav-links">
+            <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
+            <li><a href="index.html#featured-projects-section">Projects</a></li>
+            <li><a href="assets/img/home/portfolio-resume.pdf">Resume</a></li>
+            <li><a href="mailto:knl8@sfu.ca">Contact</a></li>
+          </ul>
+  
+          <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+  
+        </nav>
+    </header>
+
+    <section class="home-hero-section">
+        <div class="content fade-in-left">
+            <h1>Citation links</h1>
+            <p>Source for fade in animation: <a href="https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/">https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/</a></p>
+            <p>Source for hamburger menu: <a href="https://www.codingnepalweb.com/create-responsive-coffee-website-html-css/">https://www.codingnepalweb.com/create-responsive-coffee-website-html-css/</a></p>
+            <p>Source for headings typeface: <a href="https://fonts.googleapis.com/css?family=Rufina">'https://fonts.googleapis.com/css?family=Rufina'</a></p>
+            <p>Source for paragraphs typeface: <a href="https://fonts.googleapis.com/css?family=Average Sans">'https://fonts.googleapis.com/css?family=Average Sans'</a></p>
+
+        </div>
+    </section>
+
+</body>
+
+<!-- Javascript for the Hamburger menu -->
+<script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+  
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+  
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+</script>
+</html>

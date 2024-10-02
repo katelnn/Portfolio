@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Rufina'>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Average Sans'>
+
+    <!-- Hamburger Icon Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <title>P02 Styleguide</title>
+    
+</head>
+
+<body>
+    <!------- HEADER ------->
+    <header>
+      <nav class="navbar">
+
+        <a class="company-name" href="#">K.L.</a>
+
+        <ul class="nav-links">
+          <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
+          <li><a href="#interactive_elements">Interactive Elements</a></li>
+          <li><a href="#visual_styling">Visual Styling</a></li>
+          <li><a href="#brand_ideas">Brand Ideas</a></li>
+          <li><a href="#citations">Citations</a></li>
+        </ul>
+
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+
+      </nav>
+    </header>
+
+    <!------- HERO SECTION ------->
+    <section class="hero-section">
+      <div class="content">
+        <h1>Style Guide</h1>
+        <p>
+            A style guide for my portfolio serves as a reference document that outlines the visual and design elements to maintain consistency across all materials within the different pages.
+        </p>
+      </div>
+    </section>
+
+    <!------- INTERACTIVE ELEMENTS SECTION ------->
+    <section class="main-sections">
+        <section id="interactive_elements">
+            <h2>Interactive Elements</h2>
+
+            <!-- In-text Link Sub-Section -->
+            <section class="element">
+                <h3>In-text link</h3>
+
+                <h4>CSS Selector:</h4>
+                <p>.in-text-link</p>
+
+                <h4>Sample Code:</h4>
+                <code>&lt;p&gt;Contact me at &lt;a class="in-text-link" href="#"&gt;kateluong2017@gmail.com&lt;a&gt;&lt;p&gt;</code>
+
+                <h4>Rendered Element:</h4>
+                <p>Contact me at <a class="in-text-link" href="#">kateluong2017@gmail.com</a></p>
+            </section>
+
+            <!-- Navigation Link Sub-Section -->
+            <section class="element">
+                <h3>Navigation link</h3>
+        
+                <h4>CSS Selector:</h4>
+                <p>.button</p>
+        
+                <h4>Sample Code:</h4>
+                <code>&lt;a href="#" class="button-link"&gt;&lt;button class="button"&gt;View Project&lt;/button&gt;&lt;a&gt;</code>
+
+                <h4>Rendered Element:</h4>
+                <a href="#" class="button-link"><button class="button">View Project</button></a>
+            </section>
+
+            <!-- Image as a Link Sub-Section -->
+            <section class="element">
+                <h3>Image as a Link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.image-nav, image-nav:hover</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="https://www.pinterest.ca/pin/633387441195834/"&gt;
+                    &lt;img src="assets/img/cat-poster.png" alt="Japanese Cat Poster" class="image-nav" style&gt;
+                </code>
+                
+                <h4>Rendered element:</h4>
+                <a href="https://www.pinterest.ca/pin/633387441195834/">
+                    <img src="assets/img/cat-poster.png" alt="Japanese Cat Poster" class="image-nav" style="width: 25%">
+                </a>
+
+            </section>
+
+            <!-- Main Navigation Sub-Section -->
+          <section class="element">
+    
+            <h3>Main Navigation</h3>
+    
+            <h4>CSS selector:</h4>
+            <p>.navbar, .navbar a, .navbar a:hover, .navbar a.active, </p>
+    
+            <h4>Sample Code:</h4>
+            <code>&lt;nav class="navbar"&gt;</code>
+            <code>&lt;div class="logo"&gt;</code>
+            <code>&lt;a href="#"&gt; img src="image/logo2.png" alt="Logo" class="img-bottom"&lt;/a&gt;</code>
+            <code>&lt;a href="#"&gt; img src="image/logo1.png" class="img-top" alt="Logo" &lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;ul class="menu-links"&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt; Home &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="menu.html"&gt; About &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="about-us.html"&gt; Resume &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="contact.html"&gt; Contact &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;/ul&gt;</code>
+            <code>&lt;/nav&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <nav class="navbar">
+
+                <a class="company-name" href="#">K.L.</a>
+        
+                <ul class="nav-links">
+                  <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Resume</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+        
+                <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+            </section>
+
+        </section>
+    </section>
+    <!------- END OF INTERACTIVE ELEMENTS SECTION ------->
+
+
+    <!------- TEXT ELEMENTS SECTION ------->
+    <section class="main-sections">
+        <section id="visual_styling">
+          <h2>Visual Styling</h2>
+    
+          <!-- Headings Sub-Section -->
+          <section class="element">
+            <h3>Headings</h3>
+    
+            <h4> CSS Selector </h4>
+            <p> h1, h2 ,h3 ,h4 </p>
+    
+            <h4> Sample Code </h4>
+            <code>&lt;h1&gt;Rufina&lt;/h1&gt;</code>
+            <code>&lt;h2&gt;Average Sans&lt;/h2&gt;</code>
+            <code>&lt;h3&gt;Average Sans&lt;/h3&gt;</code>
+            <code>&lt;h4&gt;Average Sans&lt;/h4&gt;</code>
+    
+            <h4> Rendered Elements </h4>
+
+            <p>Heading 1:</p>
+            <h1>Rufina Bold 700 — 80px</h1>
+
+            <p>Heading 2:</p>
+            <h2>Rufina Regular 400 — 32px</h2>
+
+            <p>Heading 3:</p>
+            <h3>Average Sans 400 — 24px</h3>
+
+            <p>Heading 4:</p>
+            <h4>Average Sans 400 — 20.8px</h4>
+    
+          </section>
+    
+          <!-- Paragraphs Sub-Section -->
+          <section class="element">
+            <h3>Paragraphs</h3>
+    
+            <h4>CSS selector: </h4>
+            <p>p</p>
+            
+            <h4>Sample code: </h4>
+            <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code>
+            
+            <h4>Rendered element: </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+    
+          </section>
+      </section>
+
+  <!-- Colour Palette Sub-Section -->
+  <section class="element">
+      <h3>Colour Palette</h3>
+      <table class="color-palette">
+        <tr>
+          <th>Color name</th>
+          <th>Color appearance</th>
+        </tr>
+
+        <tr>
+          <td><h4> Red #368AFF</h4></td>
+          <td> <div class="rect rect1"></div> </td>
+        </tr>
+
+        <tr>
+          <td><h4> Yellow #A44F32</h4></td>
+          <td> <div class="rect rect2"></div> </td>
+        </tr>
+
+        <tr>
+          <td><h4> Pale Yellow #636363</h4></td>
+          <td> <div class="rect rect3"></div> </td>
+        </tr>
+
+        <tr>
+          <td><h4> Dark Grey #888888</h4></td>
+          <td> <div class="rect rect4"></div> </td>
+        </tr>
+
+        <tr>
+          <td><h4> Black #000000</h4></td>
+          <td> <div class="rect rect5"></div> </td>
+        </tr>
+
+      </table>
+      
+    </section>    
+
+
+    <!-- Imagery Sub-Section -->
+    <section class="element">
+      <h3>Art Direction</h3>
+      <img src="assets/img/cat-poster.png" alt="Japanese Cat Poster" class="product-image" style="width: 25%; height: auto;">
+      <img src="assets/img/coraline-poster.png" alt="Coraline Poster" class="product-image" style="width: 25%; height: auto;">
+      <img src="assets/img/japanese-magazine.png" alt="Japanese Magazine" class="product-image" style="width: 25%; height: auto;">
+      <img src="assets/img/miffy-poster.png" alt="Miffy Poster" class="product-image" style="width: 25%; height: auto;">
+    </section>
+
+  </section>
+  <!------- END OF TEXT ELEMENTS SECTION ------->
+
+   
+    <!------- BRANDING SECTION ------->
+    <section class="main-sections">
+        <section id="brand_ideas">
+            <h2>Brand Ideas</h2>
+            
+            <!-- General Brand Info Sub-Section -->
+            <section class="element">
+                <h3>About Myself</h3>
+                <p>Hello! my name is Kate Luong and I'm a passionate UI and UX designer based in Vancouver, Canada. With a blend of creativity, technical skills and the passion for design, my skills lies in the art of creative ideation and crafting tailored solutions that resonates with a wide range of audience.</p>
+                <p>Currently, I'm studying at Simon Fraser University in the Interactive Arts and Technology program. Through my education journey, I've had the priviledge of conceptualizing and executing a myriad of projects ranging from topics like Psychology, Computer Science, 3D modeling and Human-Computer Interactions. My academic pursuits have provided me with invaluable insights and hands-on experience, and each project has been a voyage of discovery which I can bring into my designs.</p>
+      
+                <h3>My Skills</h3>
+                <p>My forte lies in my ability to generate creative concepts that resonate with target audiences. Leveraging a blend of technical skills, I'm able to communicate my thought process and designs towards the audience. These includes prototyping in platforms Figma, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, Adobe InDesign. For the coding aspects, I am skilled in languages including Processing, Java, HTML, CSS, and Python.</p>
+      
+            </section>
+
+            <!-- Company Contact Sub-Section -->
+            <section class="element">
+                <h3>Projects</h3>
+                <div class="image-with-text">
+                    <div class="image-container">
+                        <a href="#">
+                            <img src="assets/img/project1/outcome.png" alt="Project 1 about VIFF microsite" class="image-nav" style="width: 50%; height: auto;">
+                        </a>
+                    </div>
+                    <div class="text-container">
+                        <h2>Project 1: A Microsite about The Vancouver International Film Festival</h2>
+                        <p>This project aims to address a pressing issue faced by our chosen client, the Vancouver International Film Festival (VIFF), by developing a microsite tailored to tackle the identified challenge. Serving as both the UI designer and prototyper, my role involves crafting the digital interface and refining the user experience.</p>
+
+                        <p>Through extensive research, we've observed the profound transformation undergone by the film exhibition industry in the digital age. This evolution has redefined the significance of arthouses and festivals like VIFF, necessitating a strategic reevaluation of their offerings to maintain relevance. To thrive in this dynamic landscape, VIFF must modernize its digital infrastructure and human resources practices to ensure competitiveness and long-term sustainability.</p>
+                            
+                        <p>Our research question, "How can we revitalize in-person experiences for younger audiences amidst the prevalence of digital interactions?", underscores our commitment to fostering genuine connections in an increasingly virtual world. In response, we've conceived the "Digital Passport Program," which introduces tangible artifacts for attendees to take home, fostering lasting connections beyond the digital realm. Drawing inspiration from Jakob's law, which advocates for leveraging familiar design patterns and cognitive models, we've adopted a user-centric approach to ensure the experience is more interactive for the audience.</p>
+                    </div>
+                </div>
+                
+                <div class="image-with-text">
+                    <div class="image-container">
+                        <a href="#">
+                            <img src="assets/img/project2/outcome.png" alt="Project 2 about Chatbot" class="image-nav" >
+                        </a>
+                    </div>
+                    <div class="text-container">
+                        <h2>Project 1: Ideation</h2>
+                        <p>This project centers around crafting a post-event microsite dedicated to showcasing the vibrant lineup of artists featured in the 5X Festival, a celebration of South Asian music and culture. Our client, 5X FEST, is deeply committed to uplifting South Asian youth culture, yet we've identified a gap in their online presence. Their current website lacks comprehensive information about the featured artists and their representation of South Asian culture, resulting in a predominantly South Asian audience.</p>
+
+                        <p>Our overarching objective is to broaden the festival's reach and foster inclusivity by posing the question: "How can we effectively promote and expand the visibility of South Asian culture to a wider and more diverse audience?"</p>
+                            
+                        <p>By designing a microsite spotlighting individual artists, we not only uphold 5X FEST's mission of championing creativity but also work towards amplifying opportunities for South Asian individuals and people of color in the arts and culture sector. In our design process, we conscientiously integrate elements that resonate with South Asian themes, colors, and graphics, while infusing modern aesthetics through unconventional layout choices. Our approach embraces neo-brutalism, a design philosophy that challenges traditional norms by juxtaposing bold colors and unconventional placement of elements. This stylistic fusion not only pays homage to South Asian design traditions but also resonates with contemporary youth culture, fostering a sense of progressivism and inclusivity.                       </p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+    <!------- END OF BRANDING SECTION ------->
+
+
+  <section class="main-sections">
+    <section id="citations">
+      <h2>Citations</h2>
+      <p>Cat Poster Image from: https://www.pinterest.ca/pin/669206825908390457/</p>
+      <p>Coraline Poster Image from: https://www.pinterest.ca/pin/35888128279727283/</p>
+      <p>Miffy Poster Image from: https://www.pinterest.ca/pin/669206825908390563/</p>
+
+    </section>
+    </section>
+</section>
+
+
+    <!-- Source for increment and decrement button -->
+    <script>
+        function initializeQuantity(productCard) {
+            const plus = productCard.querySelector(".plus");
+            const minus = productCard.querySelector(".minus");
+            const num = productCard.querySelector(".num");
+
+            let a = 0;
+
+            plus.addEventListener("click", () => {
+                a++;
+                num.innerText = a;
+            });
+
+            minus.addEventListener("click", () => {
+                if (a > 0) {
+                    a--;
+                    num.innerText = a;
+                }
+            });
+        }
+
+        // Initialize quantity functionality for each product card
+        const productCards = document.querySelectorAll(".product-card");
+        productCards.forEach((card) => {
+            initializeQuantity(card);
+        });
+    </script>
+
+    <!-- Javascript for the Hamburger menu -->
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+    <!-- Javascript for calculating the space between sections and header -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const headerHeight = document.querySelector("header").offsetHeight;
+            const scrollOffset = 80; // Adjust this value as needed
+            const links = document.querySelectorAll(".nav-links a");
+
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const targetPosition = targetElement.offsetTop - headerHeight - scrollOffset;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+  </body>
+
+
+</html>

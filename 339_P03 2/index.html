@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Rufina'>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Average Sans'>
+
+    <!-- Hamburger Icon Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <title>Kate Luong|Portfolio</title>
+    
+</head>
+
+<body>
+    <!------- HEADER ------->
+    <header>
+        <nav class="navbar">
+  
+          <a class="company-name" href="index.html">K.L.</a>
+  
+          <ul class="nav-links">
+            <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
+            <li><a href="index.html#featured-projects-section">Projects</a></li>
+            <li><a href="assets/img/home/portfolio-resume.pdf">Resume</a></li>
+            <li><a href="mailto:knl8@sfu.ca">Contact</a></li>
+          </ul>
+  
+          <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+  
+        </nav>
+    </header>
+
+    <!------- HERO SECTION ------->
+    <section class="home-hero-section">
+        <div class="portrait-image">
+            <img src="assets/img/home/me.png" alt="Portrait of Kate Luong" id="homepage-hero-image">
+        </div>
+        <div class="content fade-in-left">
+            <h1>Nice to meet you!</h1>
+            <p>
+                Hello! My name is Kate Luong and I’m a passionate UI designer based in Vancouver, Canada. I’m interested in the <span class="highlighted-points">intersection of art and technology</span> and how I can collaborate on projects that <span class="highlighted-points">challenge conventions</span> but still provides a <span class="highlighted-points">user-centric</span> experience. 
+            </p>
+
+            <p>
+                My forte lies in my ability to collaborate and communicate with clients to generate creative concepts that resonate with their target audience. Leveraging a blend of technical skills, I’m able to communicate my thought process and designs to the audience. For designing and prototyping, I’m skilled in using Figma, Adobe Photoshop, and Adobe InDesign. On the technical front, my expertise extends to coding languages including Processing, Java, HTML, CSS, and Python.
+            </p>
+        </div>
+    </section>
+
+    <!------- FEATURED PROJECTS SECTION ------->
+    <section class="home-main-section" id="featured-projects-section">
+        <div class="featured-projects-title">
+            <h2>Featured Projects</h2>
+            <p>Check out some of my projects!</p>
+        </div>
+        <div class="project-container">
+            <div class="project-item">
+                <a href="project1.html">
+                    <img src="assets/img/home/project1-homepg.png" alt="Project 1 Landing Page Microsite" class="image-nav">
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Project 1 — 5X Festival Microsite</h3>
+                    <p>A developed microsite for the 5X Festival's Artist Lineup</p>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-item">
+                <a href="project2.html">
+                    <img src="assets/img/home/project2-homepg.png" alt="Project 2 ChatBot Project" class="image-nav">
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2 — One Tap Away</h3>
+                    <p>A chatbot project for the Vancouver & Lower Mainland Multicultural Family Support Services Society </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="footer-container">
+            <p>Kate Luong &copy; 2024</p>
+            <p><a class="in-text-link" href="mailto:knl8@sfu.ca">knl8@sfu.ca</a></p>
+            <p><a class="in-text-link" href="style-guide.html">Styleguide</a></p>
+            <p><a class="in-text-link" href="citations.html">Citations</a></p>
+    </footer>
+
+</body>
+
+<!-- Javascript for the Hamburger menu -->
+<script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+  
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+  
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+</script>
+</html>
